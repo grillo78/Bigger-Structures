@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "package": "com.grillo78.bigger_structure.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "bigger_structure.refmap.json",
+  "mixins": [
+    "MixinCUpdateStructureBlockPacket",
+    "MixinStructureBlockTileEntity"
+  ],
+  "client":[
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "minVersion": "0.8"
+}
