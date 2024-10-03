@@ -5,7 +5,7 @@
   "refmap": "bigger_structure.refmap.json",
   "mixins": [
     "MixinCUpdateStructureBlockPacket",
-    "MixinStructureBlockTileEntity"
+    "MixinStructureBlockEntity"
   ],
   "client":[
   ],
