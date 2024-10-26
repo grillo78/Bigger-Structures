@@ -9,7 +9,7 @@ import org.spongepowered.asm.mixin.injection.ModifyConstant;
 @Mixin(StructureBlockEntity.class)
 public class MixinStructureBlockEntity {
 
-    @ModifyConstant(method = "loadAdditional", constant = {@Constant(intValue = 48), @Constant(intValue = -48)})
+    @ModifyConstant(method = "load", constant = {@Constant(intValue = 48), @Constant(intValue = -48)})
     private int modifyLoadSizes(int original) {
         return original < 0 ? -Config.COMMON.maxStructureSize.get() : Config.COMMON.maxStructureSize.get();
     }
